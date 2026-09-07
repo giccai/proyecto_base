@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Cómo gestionar este repositorio (prompt.md)
+    url: https://github.com/giccai/proyecto_base/blob/main/prompt.md
+    about: Etiquetas, sprints, Product Backlog, flujo Kanban y Definition of Done.
+  - name: GICC HPRC — clúster de cómputo
+    url: https://hprc.gicc.ai
+    about: Lanzar y monitorizar entrenamientos en el clúster Slurm del GICC.

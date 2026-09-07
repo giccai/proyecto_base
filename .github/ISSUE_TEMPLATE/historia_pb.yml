@@ -1,0 +1,90 @@
+name: "Historia del Product Backlog (PB-XX)"
+description: "Un ítem del Product Backlog: qué se espera, quién lo hace y cómo sabemos que está listo."
+title: "PB-XX: "
+labels: ["tipo/historia"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Usa el ID del Product Backlog en el título (`PB-07: Entrenar los baselines de la literatura`).
+        Añade las etiquetas `rol/…`, `sprint-N` y la fase, asigna el milestone del sprint y a la persona responsable.
+        La guía completa está en [`prompt.md`](https://github.com/giccai/proyecto_base/blob/main/prompt.md).
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: Sprint
+      options:
+        - "Sprint 1 · Comprensión de la investigación"
+        - "Sprint 2 · Comprensión de los datos"
+        - "Sprint 3 · Preparación de los datos"
+        - "Sprint 4 · Modelado y experimentación"
+        - "Sprint 5 · Evaluación"
+        - "Sprint 6 · Difusión: prototipo y artículo"
+    validations:
+      required: true
+  - type: dropdown
+    id: fase
+    attributes:
+      label: Fase
+      options:
+        - "Comprensión de la investigación"
+        - "Comprensión de los datos"
+        - "Preparación de los datos"
+        - "Modelado y experimentación"
+        - "Evaluación"
+        - "Difusión: prototipo y artículo"
+    validations:
+      required: true
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Rol responsable
+      options:
+        - "IP · Investigador Principal"
+        - "LIT · Literatura y Redacción"
+        - "DAT · Datos y Protocolo"
+        - "MOD · Método y Experimentos"
+        - "REP · Reproducibilidad y Evidencia"
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Qué se espera como resultado y en qué avanza la investigación.
+      placeholder: "Como <rol>, necesito <qué> para <por qué>."
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      description: Verificables, no aspiracionales. «La tabla 2 se regenera con un comando», no «buen rendimiento».
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: entregable
+    attributes:
+      label: Entregable
+      placeholder: "notebooks/03_eda.ipynb · src/models/baseline.py · paper/sections/04_results.tex · docs/model_card.md"
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: Definition of Done
+      options:
+        - label: Rama `feat/PB-XX` con Pull Request que declara `Closes #<issue>`, revisado y mergeado a `main`. Nunca se trabaja directamente sobre `main`.
+        - label: Revisado por alguien distinto del autor; en equipos de una persona, autorrevisión en sesión separada y fechada en `docs/bitacora.md`, con el Pull Request abierto al menos doce horas.
+        - label: El entorno se reconstruye con versiones fijadas y todo lo que la historia produce se regenera con un comando documentado (`make <objetivo>`).
+        - label: Semillas fijadas y declaradas: ningún número aleatorio sin semilla.
+        - label: Datos, checkpoints y artefactos pesados versionados con DVC; ningún binario ni CSV en el diff de Git.
+        - label: Si la historia lanzó cómputo, la corrida queda registrada con identificador, configuración, semilla, commit, entorno y nodo de GICC HPRC.
+        - label: Toda cifra del entregable es trazable a su corrida; ninguna tabla ni figura del manuscrito se escribe a mano, salvo las cifras citadas de la literatura, que llevan su cita al lado.
+        - label: Ninguna comparación se declara «mejor» sin prueba estadística y tamaño de efecto; las diferencias no significativas se enuncian como tales.
+        - label: Los resultados que contradicen la hipótesis se conservan, se documentan y se etiquetan `resultado-negativo`: borrar un experimento fallido es una falta metodológica.
+        - label: Existe al menos una prueba automatizada, nueva o actualizada, que fallaría si esta historia se rompiera.
+        - label: Si la historia produce texto del artículo, está en `paper/`, compila sin errores y sus referencias están en `paper/refs.bib` con DOI verificado.
+        - label: La documentación afectada quedó actualizada en el mismo Pull Request, en español con tildes correctas; los identificadores del código, en inglés y coherentes con la notación del artículo.
+        - label: El issue tiene sus etiquetas completas (`tipo/*`, `sprint-N`, fase y `rol/*`), su milestone, está enlazado a su Pull Request y se movió a «Done» con `dod-verificado` puesta por quien revisa.

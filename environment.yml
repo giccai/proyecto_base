@@ -1,0 +1,27 @@
+# Entorno reproducible del proyecto. Recréalo desde cero con:
+#   conda env create -f environment.yml && conda activate gicc-proyecto
+#
+# Fija las versiones de todo lo que afecte a un número del artículo.
+name: gicc-proyecto
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - ipywidgets
+  - pyyaml
+  - pip:
+      - dvc
+      - mlflow
+      - pytest
+      - hprc            # CLI del clúster Slurm del GICC
+      # --- añade aquí el framework de tu línea de investigación ---
+      # - torch
+      # - transformers
+      # - lightning

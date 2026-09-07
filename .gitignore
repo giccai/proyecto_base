@@ -1,0 +1,69 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ── Entornos y secretos ───────────────────────────────────
+.env
+.env.*
+.venv/
+venv/
+*.pem
+*.key
+
+# ── Datos: se versionan con DVC, nunca en Git ─────────────
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+!data/**/.gitkeep
+!data/**/.gitignore
+!data/**/*.dvc
+*.csv
+*.tsv
+*.parquet
+*.xlsx
+*.zip
+*.tar.gz
+*.h5
+*.npy
+*.npz
+
+# ── Modelos, checkpoints y experimentos ───────────────────
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.joblib
+mlruns/
+mlartifacts/
+wandb/
+outputs/
+logs/
+slurm-*.out
+
+# ── Artículo (LaTeX) ──────────────────────────────────────
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.toc
+
+# ── Sistema / editores ────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

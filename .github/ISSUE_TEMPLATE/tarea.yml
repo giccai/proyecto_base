@@ -1,0 +1,36 @@
+name: "Tarea técnica"
+description: "Sub-tarea concreta de una historia (PB-XX) que se mueve por el Kanban."
+title: "PB-XX · "
+labels: ["tipo/tarea"]
+body:
+  - type: input
+    id: historia
+    attributes:
+      label: Historia a la que pertenece
+      placeholder: "#7 (PB-07)"
+    validations:
+      required: true
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Rol responsable
+      options:
+        - "IP · Investigador Principal"
+        - "LIT · Literatura y Redacción"
+        - "DAT · Datos y Protocolo"
+        - "MOD · Método y Experimentos"
+        - "REP · Reproducibilidad y Evidencia"
+    validations:
+      required: true
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: textarea
+    id: listo
+    attributes:
+      label: Cómo sabemos que está terminado
+      value: |
+        - [ ]

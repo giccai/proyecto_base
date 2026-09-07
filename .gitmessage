@@ -1,0 +1,49 @@
+# <tipo>(<PB-XX>): <resumen en imperativo, en minúsculas, sin punto final>
+# |<----  máximo 50 caracteres  ---->|
+
+
+# Cuerpo (opcional): qué cambia y por qué; no cómo. Líneas de ≤ 72 caracteres.
+# |<------------------------  máximo 72 caracteres  ------------------------>|
+
+
+# Trazabilidad (completa siempre las tres líneas):
+Rol:
+Sprint:
+Refs: #
+
+# ── Tipos ──────────────────────────────────────────────────────────────────
+#   feat      nueva funcionalidad del prototipo, notebook o script
+#   exp       experimento: entrenamiento, ablation, búsqueda de hiperparámetros
+#   data      datos versionados, splits, preprocesamiento del corpus
+#   model     arquitectura, pérdida, checkpoint, registro del modelo
+#   eval      métricas, tests estadísticos, comparación con baselines
+#   paper     redacción del artículo, tablas, figuras, bibliografía
+#   fix       corrección de un error o de un resultado incorrecto
+#   docs      README, tarjetas de modelo y datos, documentación del prototipo
+#   test      tests automáticos y validaciones de reproducibilidad
+#   refactor  cambio de código sin cambiar el comportamiento
+#   chore     entorno, dependencias, configuración, CI
+#
+# ── Rol ────────────────────────────────────────────────────────────────────
+#   IP · LIT · DAT · MOD · REP
+#
+# ── Sprint ─────────────────────────────────────────────────────────────────
+#   1 Comprensión de la investigación
+#   2 Comprensión de los datos
+#   3 Preparación de los datos
+#   4 Modelado y experimentación
+#   5 Evaluación
+#   6 Difusión: prototipo y artículo
+#
+# ── Refs ───────────────────────────────────────────────────────────────────
+#   Número del Issue al que pertenece el cambio: "Refs: #7".
+#   Para cerrarlo al mergear, escribe "Closes #7" en el Pull Request.
+#
+# ── Ejemplos ───────────────────────────────────────────────────────────────
+#   exp(PB-09): entrena el baseline con 3 semillas y registra los runs
+#   eval(PB-12): añade prueba de Wilcoxon frente al baseline de la literatura
+#   paper(PB-17): redacta la sección de resultados con la tabla definitiva
+#   data(PB-05): versiona los splits estratificados del corpus
+#
+# Las líneas que empiezan con # no se incluyen en el commit.
+# Activar la plantilla (una vez, tras clonar):  git config commit.template .gitmessage

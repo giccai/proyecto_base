@@ -1,0 +1,44 @@
+name: "Experimento"
+description: "Un experimento concreto: hipótesis, configuración, cómo se lanza y qué se espera medir."
+title: "EXP · "
+labels: ["tipo/experimento"]
+body:
+  - type: input
+    id: historia
+    attributes:
+      label: Historia a la que pertenece
+      placeholder: "#9 (PB-09)"
+  - type: textarea
+    id: hipotesis
+    attributes:
+      label: Hipótesis
+      description: Qué esperas que ocurra y por qué. Escríbela ANTES de lanzar el experimento.
+      placeholder: "Aumentar la resolución de entrada de 224 a 384 mejora el F1 macro en al menos 2 puntos."
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuración
+      description: Modelo, datos, hiperparámetros y semillas. Enlaza el fichero de configuración si existe.
+      value: |
+        - Modelo:
+        - Datos / split:
+        - Hiperparámetros:
+        - Semillas:
+    validations:
+      required: true
+  - type: input
+    id: job
+    attributes:
+      label: Job de GICC HPRC
+      placeholder: "hprc submit scripts/train.sbatch → job id"
+  - type: textarea
+    id: resultado
+    attributes:
+      label: Resultado
+      description: Rellénalo al terminar. Enlaza el run del gestor de experimentos.
+      value: |
+        - Métrica principal:
+        - Enlace al run:
+        - ¿Se confirmó la hipótesis?

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Si usas este trabajo, cítalo así."
+title: "TÍTULO DEL PROYECTO"
+abstract: "Resumen breve del proyecto de investigación."
+authors:
+  - family-names: "Apellido"
+    given-names: "Nombre"
+    affiliation: "GICC — Grupo de Investigación de Ciencia de la Computación"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "0.1.0"
+date-released: "2026-12-07"
+license: MIT
+repository-code: "https://github.com/giccai/proyecto_base"
+# doi: "10.5281/zenodo.XXXXXXX"   # se completa en el Sprint 6
+keywords:
+  - inteligencia artificial
+  - GICC

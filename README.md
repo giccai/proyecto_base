@@ -5,7 +5,7 @@
 **Repositorio base de los proyectos de investigación en IA del [GICC](https://github.com/giccai)**  
 Inteligencia artificial, agnóstica a la tarea y al dominio: visión por computador, procesamiento de lenguaje natural, modelos de lenguaje, series de tiempo, grafos, aprendizaje por refuerzo o IA generativa.
 
-[![Kanban](https://img.shields.io/badge/Kanban-GitHub_Projects-003C65?style=flat-square)](https://github.com/orgs/giccai/projects) [![Sprints](https://img.shields.io/badge/Sprints-6_milestones-0D47A1?style=flat-square)](https://github.com/giccai/proyecto_base/milestones) [![Etiquetas](https://img.shields.io/badge/Etiquetas-roles_·_sprints_·_fases-4A148C?style=flat-square)](https://github.com/giccai/proyecto_base/labels) [![Guía](https://img.shields.io/badge/Guía-prompt.md-1B5E20?style=flat-square)](https://github.com/giccai/proyecto_base/blob/main/prompt.md)
+[![Kanban](https://img.shields.io/badge/Kanban-GitHub_Projects-003C65?style=flat-square)](https://github.com/orgs/giccai/projects/3) [![Sprints](https://img.shields.io/badge/Sprints-6_milestones-0D47A1?style=flat-square)](https://github.com/giccai/proyecto_base/milestones) [![Etiquetas](https://img.shields.io/badge/Etiquetas-roles_·_sprints_·_fases-4A148C?style=flat-square)](https://github.com/giccai/proyecto_base/labels) [![Guía](https://img.shields.io/badge/Guía-prompt.md-1B5E20?style=flat-square)](https://github.com/giccai/proyecto_base/blob/main/prompt.md)
 
 <i>Plantilla del GICC para conducir un proyecto de investigación en inteligencia artificial de trece semanas, desde la pregunta de investigación hasta sus dos entregables finales: un artículo sometido a un journal indexado en SCOPUS y un prototipo Python reproducible e instalable.</i>
 
@@ -278,7 +278,7 @@ Las fases conservan el esqueleto de CRISP-DM y cambian lo que hay que cambiar cu
 
 ## Cómo trabajamos
 
-**Tablero Kanban** ([abrir](https://github.com/orgs/giccai/projects)) — `Product backlog` → `To Do` → `In Progress` → `In Review` → `Done`
+**Tablero Kanban** ([abrir](https://github.com/orgs/giccai/projects/3)) — `Product backlog` → `To Do` → `In Progress` → `In Review` → `Done`
 
 1. Las 34 historias `PB-XX` ya existen como **Issues** en la columna **Product backlog**, con sus etiquetas (`rol/…`, `sprint-N`, fase) y su milestone.
 2. Al planificar el sprint, se asignan, se completan descripción y criterios de aceptación, se crean las sub-tareas que hagan falta y se mueven a **To Do**.
@@ -371,6 +371,6 @@ Los scripts `.sbatch` viven en `scripts/`, los registros de ejecución en `logs/
 
 <div align="center">
 
-<sub><a href="https://github.com/giccai">GICC — Grupo de Investigación de Ciencia de la Computación</a> · <a href="https://github.com/giccai/proyecto_base/blob/main/prompt.md">guía para el alumno</a> · <a href="https://github.com/orgs/giccai/projects">tablero</a></sub>
+<sub><a href="https://github.com/giccai">GICC — Grupo de Investigación de Ciencia de la Computación</a> · <a href="https://github.com/giccai/proyecto_base/blob/main/prompt.md">guía para el alumno</a> · <a href="https://github.com/orgs/giccai/projects/3">tablero</a></sub>
 
 </div>

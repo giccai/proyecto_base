@@ -34,7 +34,7 @@ Todo lo demás —las etiquetas, los sprints, el Product Backlog, el tablero— 
 | **Issues** | [`giccai/proyecto_base/issues`](https://github.com/giccai/proyecto_base/issues) | Cada unidad de trabajo. Las 34 historias `PB-XX` del Product Backlog ya están creadas |
 | **Etiquetas** | [`/labels`](https://github.com/giccai/proyecto_base/labels) | Responden *quién*, *cuándo*, *qué fase* y *qué tipo de trabajo* es cada Issue. Son 45 y ninguna es decorativa |
 | **Milestones** | [`/milestones`](https://github.com/giccai/proyecto_base/milestones) | Un milestone por sprint, con su fecha de entrega y la lista de historias |
-| **Tablero Kanban** | [GitHub Project](https://github.com/orgs/giccai/projects) | Dónde está cada Issue *ahora mismo*: `Product backlog` → `To Do` → `In Progress` → `In Review` → `Done` |
+| **Tablero Kanban** | [GitHub Project](https://github.com/orgs/giccai/projects/3) | Dónde está cada Issue *ahora mismo*: `Product backlog` → `To Do` → `In Progress` → `In Review` → `Done` |
 
 > [!TIP]
 > **Regla de oro: si no está en un Issue, no existe.** Un experimento que corriste «rápido para probar» y no anotaste en ningún sitio es trabajo que tendrás que repetir cuando el revisor del journal pregunte.
@@ -416,4 +416,4 @@ gh issue list --milestone "Sprint 1 — Comprensión de la investigación"
 
 ---
 
-<sub>Repositorio base del **GICC** · [`giccai/proyecto_base`](https://github.com/giccai/proyecto_base) · tablero: [proyecto_base](https://github.com/orgs/giccai/projects) · fin del proyecto: **lun 07-dic-2026**</sub>
+<sub>Repositorio base del **GICC** · [`giccai/proyecto_base`](https://github.com/giccai/proyecto_base) · tablero: [proyecto_base](https://github.com/orgs/giccai/projects/3) · fin del proyecto: **lun 07-dic-2026**</sub>

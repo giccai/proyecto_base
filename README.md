@@ -319,6 +319,7 @@ Refs: #9
 proyecto_base/
   README.md                         # Título del proyecto, equipo, sombreros por sprint, calendario, enlaces al tablero y aviso de que el 7 de setiembre es la fecha de inicio del control en GitHub, no necesariamente de la investigación.
   prompt.md                         # Guía para el alumno: cómo se usan las etiquetas, los sprints, el Product Backlog y el tablero Kanban de este repositorio.
+  AGENTS.md                         # Contexto para agentes de código dentro del repositorio: reglas duras de investigación, flujo, vocabulario de etiquetas y comandos.
   CITATION.cff                      # Cómo citar el trabajo; se completa con el DOI de Zenodo en el Sprint 6.
   LICENSE                           # Licencia del código y del prototipo.
   LICENSE-DATA                      # Licencia de los datos derivados que se publican; puede diferir de la del código.
